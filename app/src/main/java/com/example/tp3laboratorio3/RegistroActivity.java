@@ -25,6 +25,7 @@ private Usuario usuarioActual = null;
         binding= ActivityRegistroBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         vm= ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication()).create(RegistroActivityViewModel.class);
+        binding.imageView.setImageResource(R.drawable.perfil);
         vm.getUsuarioM().observe(this, new Observer<Usuario>() {
             @Override
             public void onChanged(Usuario usuario) {

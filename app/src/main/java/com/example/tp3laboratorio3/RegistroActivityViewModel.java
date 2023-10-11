@@ -133,44 +133,6 @@ public class RegistroActivityViewModel extends AndroidViewModel {
             }
         }
     }
-    /*public void ActualizarRegistrar(String dni, String apellido, String nombre, String correo, String contraseña) {
-
-        if(dni.isEmpty() || apellido.isEmpty() || nombre.isEmpty() || correo.isEmpty() || contraseña.isEmpty()){
-            Toast.makeText(context, "Debe llenar todos los campos", Toast.LENGTH_LONG).show();
-        }else{
-            Usuario usuario = new Usuario(dni, apellido, nombre, correo, contraseña);
-
-
-            if (this.correoF != null) {
-
-                this.correoF = ApiClient.ActualizarUsuario(context, usuario).getCorreo();
-
-                if(this.correoF != null) {
-                    Toast.makeText(context, "Actualizado con exito", Toast.LENGTH_LONG).show();
-                } else {
-                    Toast.makeText(context, "Error al actualizar", Toast.LENGTH_LONG).show();
-                }
-                this.cargarSesion(correoF);
-
-            } else {
-
-                this.correoF = ApiClient.registrar(context, usuario).getCorreo();
-
-
-
-                if (this.correoF != null) {
-                    Toast.makeText(context, "Registrado con exito", Toast.LENGTH_LONG).show();
-                } else {
-                    Toast.makeText(context, "Error al registrar", Toast.LENGTH_LONG).show();
-                }
-                this.cargarSesion(correoF);
-
-
-            }
-        }
-
-
-    }*/
 
 
 }
